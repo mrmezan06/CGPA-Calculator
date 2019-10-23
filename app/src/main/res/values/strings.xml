@@ -1,0 +1,301 @@
+<resources>
+    <string name="app_name">KUET CSE CGPA CalCulator</string>
+
+    <!--one two-->
+    <string-array name="onetwoSub">
+        <item>Structured Programming</item>
+        <item>Structured Programming Laboratory</item>
+        <item>Digital Logic Design</item>
+        <item>Chemistry</item>
+        <item>Digital Logic Design Laboratory</item>
+        <item>Chemistry Laboratory</item>
+        <item>Analog Electronics</item>
+        <item>Analog Electronics Laboratory</item>
+        <item>Coordinate Geometry and Differential Equations</item>
+        <item>Computer Aided Design Laboratory</item>
+    </string-array>
+    <string-array name="onetwoCode">
+        <item>CSE 1201</item>
+        <item>CSE 1202</item>
+        <item>CSE 1203</item>
+        <item>CHEM 1207</item>
+        <item>CSE 1204</item>
+        <item>CHEM 1208</item>
+        <item>EEE 1217</item>
+        <item>EEE 1218</item>
+        <item>MATH 1207</item>
+        <item>ME 1270</item>
+    </string-array>
+    <string-array name="onetwoCredit">
+        <item>3.00</item>
+        <item>1.50</item>
+        <item>3.00</item>
+        <item>3.00</item>
+        <item>1.50</item>
+        <item>0.75</item>
+        <item>3.00</item>
+        <item>0.75</item>
+        <item>3.00</item>
+        <item>0.75</item>
+    </string-array>
+
+    <!--two one-->
+    <string-array name="twooneCode">
+        <item>CSE 2101</item>
+        <item>CSE 2102</item>
+        <item>CSE 2105</item>
+        <item>CSE 2106</item>
+        <item>CSE 2113</item>
+        <item>EEE 2113</item>
+        <item>EEE 2114</item>
+        <item>MATH 2107</item>
+    </string-array>
+    <string-array name="twooneSub">
+        <item>Object Oriented Programming</item>
+        <item>Object Oriented Programming Laboratory</item>
+        <item>Data Structures and Algorithms</item>
+        <item>Data Structures and Algorithms Laboratory</item>
+        <item>Computer Architecture</item>
+        <item>Digital Electronics</item>
+        <item>Digital Electronics Laboratory</item>
+        <item>Fourier Analysis and Linear Algebra</item>
+    </string-array>
+    <string-array name="twooneCredit">
+        <item>3.00</item>
+        <item>1.50</item>
+        <item>3.00</item>
+        <item>1.50</item>
+        <item>3.00</item>
+        <item>3.00</item>
+        <item>1.50</item>
+        <item>3.00</item>
+    </string-array>
+<!--two two-->
+
+
+    <string-array name="twotwoCode">
+        <item>CSE 2200</item>
+        <item>CSE 2201</item>
+        <item>CSE 2202</item>
+        <item>CSE 2203</item>
+        <item>CSE 2204</item>
+        <item>CSE 2207</item>
+        <item>CSE 2208</item>
+        <item>HUM 2207</item>
+        <item>MATH 2207</item>
+    </string-array>
+    <string-array name="twotwoSub">
+        <item>Advanced Programming</item>
+        <item>Algorithm Analysis and Design</item>
+        <item>Algorithm Analysis and Design Laboratory</item>
+        <item>Microprocessors and Microcontrollers</item>
+        <item>Microprocessors and Microcontrollers Laboratory</item>
+        <item>Numerical Methods</item>
+        <item>Numerical Methods Laboratory</item>
+        <item>Economics and Accounting</item>
+        <item>Complex Variable, Vector Analysis and Statistics</item>
+    </string-array>
+    <string-array name="twotwoCredit">
+        <item>1.50</item>
+        <item>3.00</item>
+        <item>1.50</item>
+        <item>3.00</item>
+        <item>1.50</item>
+        <item>3.00</item>
+        <item>0.75</item>
+        <item>3.00</item>
+        <item>3.00</item>
+    </string-array>
+
+    <!--three one-->
+
+
+
+    <string-array name="threeoneCode">
+        <item>CSE 3100</item>
+        <item>CSE 3101</item>
+        <item>CSE 3103</item>
+        <item>CSE 3104</item>
+        <item>CSE 3109</item>
+        <item>CSE 3110</item>
+        <item>CSE 3119</item>
+        <item>CSE 3120</item>
+        <item>ECE 3115</item>
+        <item>ECE 3116</item>
+    </string-array>
+    <string-array name="threeoneSub">
+        <item>Web Programming Laboratory</item>
+        <item>Theory of Computation</item>
+        <item>Peripherals and Interfacing</item>
+        <item>Peripherals and Interfacing Laboratory</item>
+        <item>Database Systems</item>
+        <item>Database Systems Laboratory</item>
+        <item>Software Engineering and Information Systems</item>
+        <item>Software Engineering and Information Systems Laboratory</item>
+        <item>Data Communication</item>
+        <item>Data Communication Laboratory</item>
+    </string-array>
+    <string-array name="threeoneCredit">
+        <item>1.50</item>
+        <item>3.00</item>
+        <item>3.00</item>
+        <item>0.75</item>
+        <item>3.00</item>
+        <item>1.50</item>
+        <item>3.00</item>
+        <item>1.50</item>
+        <item>3.00</item>
+        <item>0.75</item>
+    </string-array>
+
+    <!--three two-->
+
+
+
+    <string-array name="threetwoCode">
+        <item>CSE 3200</item>
+        <item>CSE 3201</item>
+        <item>CSE 3202</item>
+        <item>CSE 3207</item>
+        <item>CSE 3211</item>
+        <item>CSE 3212</item>
+        <item>CSE 3217</item>
+        <item>CSE 3218</item>
+        <item>HUM 3227</item>
+
+    </string-array>
+
+    <string-array name="threetwoSub">
+        <item>System Development Project</item>
+        <item>Operating Systems</item>
+        <item>Operating Systems Laboratory</item>
+        <item>Applied Statistics and Queuing Theory</item>
+        <item>Compiler Design</item>
+        <item>Compiler Design Laboratory</item>
+        <item>Mobile Computing</item>
+        <item>Mobile Computing Laboratory</item>
+        <item>Professional Ethics and Moral Thoughts</item>
+    </string-array>
+
+    <string-array name="threetwoCredit">
+        <item>1.50</item>
+        <item>3.00</item>
+        <item>1.50</item>
+        <item>3.00</item>
+        <item>3.00</item>
+        <item>0.75</item>
+        <item>3.00</item>
+        <item>0.75</item>
+        <item>3.00</item>
+    </string-array>
+
+    <!--four one-->
+
+    <string-array name="fouroneCode">
+        <item>CSE 4000</item>
+        <item>CSE 4105</item>
+        <item>CSE 4109</item>
+        <item>CSE 4110</item>
+        <item>CSE 4111</item>
+        <item>CSE 4112</item>
+        <item>CSE 4115</item>
+        <item>CSE 4116</item>
+        <item>IEM 4127</item>
+        <item>CSE 4120</item>
+        <item>CSE 4124</item>
+        <item>CSE 4106</item>
+        <item>CSE 4127</item>
+        <item>CSE 4128</item>
+    </string-array>
+
+    <string-array name="fouroneSub">
+        <item>Project/Thesis</item>
+        <item>Computer Networks</item>
+        <item>Artificial Intelligence</item>
+        <item>Artificial Intelligence Laboratory</item>
+        <item>Machine Learning</item>
+        <item>Machine Learning Laboratory</item>
+        <item>Computer and Network Security</item>
+        <item>Computer and Network Security Laboratory</item>
+        <item>Industrial Management</item>
+        <item>Technical Writing and Seminar</item>
+        <item>Digital System Design Laboratory</item>
+        <item>Computer Networks Laboratory</item>
+        <item>Image Processing and Computer Vision</item>
+        <item>Image Processing and computer vision Laboratory</item>
+    </string-array>
+    <string-array name="fouroneCredit">
+        <item>1.50</item>
+        <item>3.00</item>
+        <item>3.00</item>
+        <item>0.75</item>
+        <item>3.00</item>
+        <item>0.75</item>
+        <item>3.00</item>
+        <item>0.75</item>
+        <item>3.00</item>
+        <item>0.75</item>
+        <item>0.75</item>
+        <item>1.50</item>
+        <item>3.00</item>
+        <item>0.75</item>
+    </string-array>
+
+    <!--four two-->
+
+    <string-array name="fourtwoCode">
+        <item> CSE 4000</item>
+        <item>CSE 4207</item>
+        <item>CSE 4208</item>
+        <item>CSE 4212</item>
+        <item>CSE 4215</item>
+        <item>CSE 4239</item>
+        <item>HUM 4207</item>
+        <item>CSE 4225</item>
+        <item>IEM 4227</item>
+        <item>CSE 4223</item>
+        <item>CSE 4224</item>
+        <item>CSE 4221</item>
+        <item>CSE 4241</item>
+        <item>CSE 4213</item>
+        <item>CSE 4233</item>
+    </string-array>
+
+
+    <string-array name="fourtwoSub">
+        <item>Project /Thesis</item>
+        <item>Computer Graphics</item>
+        <item>Computer Graphics Laboratory</item>
+        <item>Machine Learning Laboratory</item>
+        <item>Information Security and Control</item>
+        <item>Data Mining</item>
+        <item>Sociology and Government</item>
+        <item>Embedded Systems</item>
+        <item>Industrial Management</item>
+        <item>Digital System Design</item>
+        <item>Digital System Design Laboratory</item>
+        <item>Natural Language Processing</item>
+        <item>Biomedical Engineering</item>
+        <item>Fault Tolerant System</item>
+        <item>Robotics</item>
+    </string-array>
+
+    <string-array name="fourtwoCredit">
+        <item>3.00</item>
+        <item>3.00</item>
+        <item>0.75</item>
+        <item>0.75</item>
+        <item>3.00</item>
+        <item>3.00</item>
+        <item>3.00</item>
+        <item>3.00</item>
+        <item>3.00</item>
+        <item>3.00</item>
+        <item>0.75</item>
+        <item>3.00</item>
+        <item>3.00</item>
+        <item>3.00</item>
+        <item>3.00</item>
+    </string-array>
+
+</resources>
