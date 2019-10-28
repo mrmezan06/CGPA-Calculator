@@ -28,6 +28,37 @@ public class SubjectActivity extends AppCompatActivity {
 
     LinearLayout root;
     ListView subList;
+
+    subAdapter initAdapter;
+
+    ArrayList<String> oneoneSub = new ArrayList<>();
+    ArrayList<String> onetwoSub = new ArrayList<>();
+    ArrayList<String> twooneSub = new ArrayList<>();
+    ArrayList<String> twotwoSub = new ArrayList<>();
+    ArrayList<String> threeoneSub = new ArrayList<>();
+    ArrayList<String> threetwoSub = new ArrayList<>();
+    ArrayList<String> fouroneSub = new ArrayList<>();
+    ArrayList<String> fourtwoSub = new ArrayList<>();
+
+    ArrayList<String> oneoneCode = new ArrayList<>();
+    ArrayList<String> onetwoCode = new ArrayList<>();
+    ArrayList<String> twooneCode = new ArrayList<>();
+    ArrayList<String> twotwoCode = new ArrayList<>();
+    ArrayList<String> threeoneCode = new ArrayList<>();
+    ArrayList<String> threetwoCode = new ArrayList<>();
+    ArrayList<String> fouroneCode = new ArrayList<>();
+    ArrayList<String> fourtwoCode = new ArrayList<>();
+
+    ArrayList<String> oneoneCredit = new ArrayList<>();
+    ArrayList<String> onetwoCredit = new ArrayList<>();
+    ArrayList<String> twooneCredit = new ArrayList<>();
+    ArrayList<String> twotwoCredit = new ArrayList<>();
+    ArrayList<String> threeoneCredit = new ArrayList<>();
+    ArrayList<String> threetwoCredit = new ArrayList<>();
+    ArrayList<String> fouroneCredit = new ArrayList<>();
+    ArrayList<String> fourtwoCredit = new ArrayList<>();
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -57,19 +88,30 @@ public class SubjectActivity extends AppCompatActivity {
                 it = position;
             }
         });
+
+        initAdapter = new subAdapter(oneoneCode,oneoneSub,oneoneCredit,getApplicationContext());
+        subList.setAdapter(initAdapter);
+
         prepareDataForSpinner();
         prepareDataForSubArrayList();
+
+
 
         showSub.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 subAdapter adapter = new subAdapter(oneoneCode,oneoneSub,oneoneCredit,getApplicationContext());
                 subList.setAdapter(adapter);
-                if (iy == -1){
-                    Snackbar.make(root,"Year is not selected",Snackbar.LENGTH_LONG).show();
+                if (iy == -1 && it == -1){
+                    it = 0;
+                    iy = 0;
+                    adapter = new subAdapter(oneoneCode,oneoneSub,oneoneCredit,getApplicationContext());
+                    subList.setAdapter(adapter);
+                    //Snackbar.make(root,"Year is not selected",Snackbar.LENGTH_LONG).show();
                 }else if (it == -1){
-                    Snackbar.make(root,"Term is not selected",Snackbar.LENGTH_LONG).show();
-                }else {
+                    it = 0;
+                }
+                else {
                     if (iy == 0 && it == 0){
                         //11
                        adapter = new subAdapter(oneoneCode,oneoneSub,oneoneCredit,getApplicationContext());
@@ -121,32 +163,6 @@ public class SubjectActivity extends AppCompatActivity {
         });
     }
 
-    ArrayList<String> oneoneSub = new ArrayList<>();
-    ArrayList<String> onetwoSub = new ArrayList<>();
-    ArrayList<String> twooneSub = new ArrayList<>();
-    ArrayList<String> twotwoSub = new ArrayList<>();
-    ArrayList<String> threeoneSub = new ArrayList<>();
-    ArrayList<String> threetwoSub = new ArrayList<>();
-    ArrayList<String> fouroneSub = new ArrayList<>();
-    ArrayList<String> fourtwoSub = new ArrayList<>();
-
-    ArrayList<String> oneoneCode = new ArrayList<>();
-    ArrayList<String> onetwoCode = new ArrayList<>();
-    ArrayList<String> twooneCode = new ArrayList<>();
-    ArrayList<String> twotwoCode = new ArrayList<>();
-    ArrayList<String> threeoneCode = new ArrayList<>();
-    ArrayList<String> threetwoCode = new ArrayList<>();
-    ArrayList<String> fouroneCode = new ArrayList<>();
-    ArrayList<String> fourtwoCode = new ArrayList<>();
-
-    ArrayList<String> oneoneCredit = new ArrayList<>();
-    ArrayList<String> onetwoCredit = new ArrayList<>();
-    ArrayList<String> twooneCredit = new ArrayList<>();
-    ArrayList<String> twotwoCredit = new ArrayList<>();
-    ArrayList<String> threeoneCredit = new ArrayList<>();
-    ArrayList<String> threetwoCredit = new ArrayList<>();
-    ArrayList<String> fouroneCredit = new ArrayList<>();
-    ArrayList<String> fourtwoCredit = new ArrayList<>();
 
     private void prepareDataForSubArrayList() {
        /*one one*/
@@ -217,6 +233,8 @@ public class SubjectActivity extends AppCompatActivity {
         fourtwoCode = new ArrayList<>(Arrays.asList(getResources().getStringArray(R.array.fourtwoCode)));
         fourtwoCredit = new ArrayList<>(Arrays.asList(getResources().getStringArray(R.array.fourtwoCredit)));
         fourtwoSub = new ArrayList<>(Arrays.asList(getResources().getStringArray(R.array.fourtwoSub)));
+
+        initAdapter.notifyDataSetChanged();
     }
 
     private void prepareDataForSpinner() {

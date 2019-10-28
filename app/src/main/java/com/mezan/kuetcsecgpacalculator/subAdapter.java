@@ -49,7 +49,7 @@ public class subAdapter extends BaseAdapter {
         txtCredit = view.findViewById(R.id.itemCredit);
 
         txtCode.setText(Code.get(i));
-        txtCredit.setText(Credit.get(i));
+        txtCredit.setText("Credit: "+Credit.get(i));
         txtSub.setText(Sub.get(i));
 
         return view;

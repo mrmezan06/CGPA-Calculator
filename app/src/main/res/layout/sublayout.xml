@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
+    <TextView
+        android:layout_marginTop="10dp"
+        android:background="#313030"
+        android:layout_width="match_parent"
+        android:layout_height="4dp" />
     <LinearLayout
-        android:background="#550122"
+        android:background="#FFF"
         android:weightSum="10"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -16,7 +20,7 @@
             android:layout_height="match_parent"
             android:layout_weight="3"
             android:textSize="24sp"
-            android:textColor="#fff"
+            android:textColor="#333333"
             android:textStyle="bold"
             android:text="CSE2110"
             />
@@ -26,26 +30,27 @@
             android:layout_height="match_parent"
             android:layout_weight="7"
             android:textSize="24sp"
-            android:textColor="#fff"
+            android:textColor="#665C5C"
             android:textStyle="bold"
             android:text="Computer and Network Security Laboratory"
             />
     </LinearLayout>
     <TextView
-        android:background="#550122"
+        android:background="#FFF"
         android:gravity="end"
         android:paddingEnd="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="28sp"
-        android:textColor="#ff22"
+        android:textColor="#754141"
         android:textStyle="bold"
-        android:text="3.00"
+        android:text="Credit: 3.00"
         android:id="@+id/itemCredit"
         />
     <TextView
-        android:background="#F13302"
+        android:background="#313030"
         android:layout_width="match_parent"
-        android:layout_height="4dp" />
-
+        android:layout_height="4dp"
+        android:layout_marginBottom="10dp"
+        />
 </LinearLayout>
